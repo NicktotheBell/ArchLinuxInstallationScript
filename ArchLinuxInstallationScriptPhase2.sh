@@ -54,6 +54,13 @@ nano /etc/pacman.conf
 echo Generating pkgfile
 pkgfile --update
 
+# Grab dotfiles from github
+echo Downloading user dotfiles from github
+su nicholasbell
+yadm clone https://github.com/nicktothebell/dotfiles
+yadm checkout "/home/nicholasbell"
+exit
+
 # Exit chroot environment
 echo Done
 exit
