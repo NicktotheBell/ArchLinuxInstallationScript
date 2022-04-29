@@ -31,7 +31,7 @@ reflector --latest 20 --protocol https --country 'United States' --sort rate --s
 
 # Install essential packages
 echo Installing essential packages
-pacstrap /mnt base base-devel linux linux-firmware btrfs-progs networkmanager nano man-db man-pages texinfo intel-ucode neofetch htop mc cowsay fortune-mod figlet cmatrix terminus-font pkgfile pkgstats bash-completion thefuck starship
+pacstrap /mnt base base-devel linux linux-firmware btrfs-progs networkmanager nano man-db man-pages texinfo intel-ucode neofetch htop mc cowsay fortune-mod figlet cmatrix terminus-font pkgfile pkgstats bash-completion thefuck starship yadm
 
 # Generate an fstab file
 echo Generating fstab file
@@ -39,4 +39,5 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 # Change root into the new system
 echo Changing root into the new system
+cp -r /root/archlinuxinstalltionscript/ /mnt/root/
 arch-chroot /mnt
