@@ -22,6 +22,10 @@ nano /etc/hosts
 echo Enabling NetworkManager
 systemctl enable NetworkManager.Service
 
+# Enable gpm service
+echo Enabling gpm
+systemctl enable gpm.service
+
 # Edit and recreate initramfs
 echo Editing intramfs config and recreating initramfs
 nano /etc/mkinitcpio.conf
