@@ -46,6 +46,14 @@ bootctl install
 nano /boot/loader/loader.conf
 nano /boot/loader/entries/arch.conf
 
+# Configure pacman.conf
+echo Configuring pacman.conf
+nano /etc/pacman.conf
+
+# Generate pkgfile
+echo Generating pkgfile
+pkgfile --update
+
 # Exit chroot environment
 echo Done
 exit
