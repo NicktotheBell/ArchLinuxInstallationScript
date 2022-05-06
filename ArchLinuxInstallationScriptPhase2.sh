@@ -64,4 +64,5 @@ exit
 
 # Exit chroot environment
 echo Done
+rm -rf /root/ArchLinuxInstallationScript
 exit
