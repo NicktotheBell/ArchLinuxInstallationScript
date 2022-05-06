@@ -39,5 +39,5 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 # Change root into the new system
 echo Changing root into the new system
-cp -r /root/archlinuxinstalltionscript/ /mnt/root/
+cp -r /root/archlinuxinstalltionscript /mnt/root
 arch-chroot /mnt
