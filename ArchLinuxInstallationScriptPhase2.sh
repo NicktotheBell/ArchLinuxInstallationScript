@@ -11,7 +11,7 @@ echo LANG=en_US.UTF-8 >> /etc/locale.conf
 
 # Make console font changes persistant
 echo Saving console ofnt changes
-echo consolefont=ter-116n >> /etc/vconsole.conf
+echo FONT=ter-116n >> /etc/vconsole.conf
 
 # Create the hostname file and setup the hosts file
 echo Creating hostname file and setting up the hosts file
