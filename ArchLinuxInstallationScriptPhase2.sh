@@ -57,6 +57,7 @@ pkgfile --update
 # Grab dotfiles from github
 echo Downloading user dotfiles from github
 su nicholasbell
+cd ~
 yadm clone https://github.com/nicktothebell/dotfiles
 yadm checkout "/home/nicholasbell"
 exit
