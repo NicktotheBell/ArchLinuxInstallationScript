@@ -31,7 +31,7 @@ reflector --latest 20 --protocol https --country 'United States' --sort rate --s
 
 # Install essential packages
 echo Installing essential packages
-pacstrap /mnt base base-devel linux linux-firmware btrfs-progs networkmanager nano man-db man-pages texinfo intel-ucode neofetch htop mc cowsay fortune-mod figlet cmatrix terminus-font pkgfile pkgstats bash-completion thefuck starship yadm
+pacstrap /mnt base base-devel linux linux-firmware btrfs-progs networkmanager nano man-db man-pages texinfo intel-ucode neofetch htop mc cowsay fortune-mod figlet cmatrix terminus-font pkgfile pkgstats bash-completion thefuck starship yadm xdg-user-dirs
 
 # Generate an fstab file
 echo Generating fstab file
